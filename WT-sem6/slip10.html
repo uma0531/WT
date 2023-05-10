@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert Text Before and After a Paragraph</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+            {
+			// Add text before the paragraph
+			$("p").before("<h3>This is the text before the paragraph.</h3>");
+			
+			// Add text after the paragraph
+			$("p").after("<h3>This is the text after the paragraph.</h3>");
+		});
+	</script>
+</head>
+<body>
+	<!-- Create a paragraph -->
+	<p>This is a paragraph.</p>
+</body>
+</html>

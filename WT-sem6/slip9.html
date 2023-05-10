@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Membership Form Validation</title>
+</head>
+
+<body>
+
+  <h1>Membership Form Validation</h1>
+
+  <form name="Membership Form" onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" name="submit" value="Log In">
+  </form>
+
+<script type="text/javascript">
+
+function validateForm()
+ {
+  // Get the username and password values from the form
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  // Check if the username and password meet the requirements
+  if (username.length < 6) 
+{
+    alert("Username must be at least 6 characters long");
+    return false;
+ } 
+else if (password.length < 8)
+ {
+    alert("Password must be at least 8 characters long");
+    return false;
+  } 
+else if (!/\d/.test(password))
+ {
+    alert("Password must contain at least one number");
+    return false;
+  }
+   
+ else
+  {
+       alert("login successful !");
+       return true;
+  }
+}  
+</script>
+</body>
+</html>

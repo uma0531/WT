@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci Sequence</title>
+	<script>
+		function fibonacci() 
+                  {
+			var n = parseInt(document.getElementById("input").value);
+			var a = 0, b = 1, nextTerm;
+			document.write("Fibonacci Sequence: ");
+			for (var i = 1; i <= n; i++)
+                           {
+				document.write(a + " ");
+				nextTerm = a + b;
+				a = b;
+				b = nextTerm;
+			}
+		}
+	</script>
+</head>
+<body>
+	<label for="input">Enter a digit uptil what you'd like fibonacci series:</label>
+	<input type="number" id="input" name="input"><br><br>
+	<button onclick="fibonacci()"> Generate Fibonacci Sequence </button>
+</body>
+</html>

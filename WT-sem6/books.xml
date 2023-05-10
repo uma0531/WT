@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<library>
+	<book>
+		<title>Book 1</title>
+		<author>Author 1</author>
+		<year>2021</year>
+		<price>10.99</price>
+	</book>
+	<book>
+		<title>Book 2</title>
+		<author>Author 2</author>
+		<year>2022</year>
+		<price>12.99</price>
+	</book>
+	<book>
+		<title>Book 3</title>
+		<author>Author 3</author>
+		<year>2023</year>
+		<price>14.99</price>
+	</book>
+</library>

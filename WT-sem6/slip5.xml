@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<Itemdetails>
+     <item>
+         <itemname>Books</itemname>
+         <itemprice>100</itemprice>
+         <quantity>3</quantity>
+     </item>
+     <item>
+         <itemname>Pens</itemname>
+         <itemprice>50</itemprice>
+         <quantity>10</quantity>
+     </item>
+     <item>
+         <itemname>Pencil</itemname>
+         <itemprice>10</itemprice>
+         <quantity>2</quantity>
+     </item>
+     <item>
+         <itemname>Chairs</itemname>
+         <itemprice>200</itemprice>
+         <quantity>5</quantity>
+     </item>
+     <item>
+         <itemname>Keys</itemname>
+         <itemprice>30</itemprice>
+         <quantity>15</quantity>
+     </item>
+</Itemdetails>

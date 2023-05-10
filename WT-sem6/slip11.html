@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Name Input</title>
+  </head>
+  <body>
+    <h1>Student Name Input</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" onblur="checkName()" onclick="checkName()">
+    <img id="image" src="https://via.placeholder.com/150" onmouseover="enlargeImage()" onmouseout="shrinkImage()">
+    <script>
+      function checkName() {
+        var nameInput = document.getElementById("name");
+        var image = document.getElementById("image");
+        if (nameInput.value) {
+          nameInput.style.color = "red";
+          nameInput.style.fontSize = "18px";
+          image.style.display = "none";
+        } else {
+          nameInput.style.color = "";
+          nameInput.style.fontSize = "";
+          image.style.display = "block";
+        }
+      }
+
+      function enlargeImage() {
+        var image = document.getElementById("image");
+        image.style.width = "200px";
+        image.style.height = "200px";
+      }
+
+      function shrinkImage() {
+        var image = document.getElementById("image");
+        image.style.width = "150px";
+        image.style.height = "150px";
+      }
+    </script>
+  </body>
+</html>
